@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Cards</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap; /* Cards will stay beside each other */
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1 1 300px;
+            min-width: 300px;
+            max-width: 350px;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: #fff;
+        }
+        .card button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .card .green {
+            background-color: #28A745;
+        }
+        @media (max-width: 1200px) {
+            .flex-container {
+                flex-wrap: wrap; /* Responsive for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Flexbox Cards</h2>
+    <div class="flex-container">
+        <div class="card">
+            <h3>Free Fire Club</h3>
+            <p>This is a sample card with some text content. You can add more details about the card here. Cards are displayed side by side using Flexbox.</p>
+            <button>Click to join</button>
+        </div>
+        <div class="card">
+            <h3></h3>
+            <p>This card contains different content and a button. Flexbox makes it easy to align cards horizontally. Add any information you want here.</p>
+            <button class="green">Learn More</button>
+        </div>
+        <div class="card">
+            <h3>Gaming Card</h3>
+            <p>Experience the latest in gaming technology with our new gaming card. Enjoy high performance and stunning graphics for all your favorite games.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="card">
+            <h3>Graphics Card</h3>
+            <p>Upgrade your PC with our high-performance graphics card. Perfect for gaming, design, and multimedia tasks. Get yours today!</p>
+            <button class="green">Learn More</button>
