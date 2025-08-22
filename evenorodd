@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--<button onclick="evenorodd()">Click me-->
+    
+   </button>
+    <script>
+//a = prompt("Enter a number");
+   //     evenorodd(a);
+     //   function evenorodd(num) {
+       //     if(num%2==0) {
+         //       alert('Even number');
+           // }
+            //else {
+              //  alert('odd number');
+           // }
+            
+            
+       // }
+
+       var x=123;
+       var y=0;
+       var z;
+       while(x>0) {
+           z=x%10;
+           y*=z;
+           x=parseInt(x/10);
+           document.write(x+ "<br>");
+           document.write(y+ "<br>");
+           document.write(z+ "<br>");
+       }
+       document.write("The product of digits is: " + y);
+document.write("<br>");
+document.write("namaste boss")
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+from math import pi
+from math import sqrt
+r=16
+A=pi*r**2
+print("Area of the circle is:",A)
+print(sqrt(4))
+print(pi)
